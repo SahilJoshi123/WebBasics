@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: lightskyblue;
+        }
+
+        .font{
+            font-weight:bold;
+        }
+
+        body{
+            margin-left: 450px;
+        }
+
+        .header{
+            margin-left: 100px;
+        }
+
+        [type="button"]{
+            background-color: white;
+            color: black;
+            margin-left: 190px;
+        }
+
+    </style>
+
+    <script src="js/form.js"></script>
+
+</head>
+<body>
+    <div class="header"><h1>Employee Form</h1></div>
+    <div>
+        <form action="" method="get" id="form">
+            <table border="2">
+                <tr>
+                    <td class="font">Name</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+
+                <tr>
+                    <td class="font">Employee Code</td>
+                    <td><input style="width: 50px;" type="text" id="empcode"></td>
+                </tr>
+
+                <tr>
+                    <td class="font">Department</td>
+                    <td><input type="radio" name="department">Admin<br>
+                        <input type="radio" name="department">HR<br>
+                        <input type="radio" name="department">Technical<br>
+                        <input type="radio" name="department">Accounts
+                    
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="font">Date of Joining</td>
+                    <td>
+                        <select id="day">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+
+                        <select id="month">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option></select>
+
+
+                        <select id="year">
+                            <option></option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                        </select>
+                        <br>
+                        dd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mm &nbsp;&nbsp; YYYY
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font">Address</td>
+                    <td><textarea id="textarea"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td class="font">Training program attended</td>
+                    <td><input type="checkbox">HTML/DHTML<br>
+                        <input type="checkbox">Java <br>
+                        <input type="checkbox">Client/Server <br>
+                        <input type="checkbox">.NET</td>
+                </tr>
+                <tr>
+                    <td class="font">Training Program needed to attend</td>
+                    <td><select>
+                        <option>Javascript</option>
+                        <option>Python</option>
+                        <option>Angular</option>
+                        <option>SQL</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td class="font">Send Information at</td>
+                    <td><a href="">empinfo@</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" onclick="validate()" value="SUBMIT"></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+    
+</body>
+</html>
